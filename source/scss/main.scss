@@ -1,10 +1,43 @@
 @charset "utf-8";
 
+$primary:#6C5DD3;
+ $box-padding: None;
+$box-shadow: None;
+$sizing-range-start: 4;
+$sizing-range-end: 128;
+$sizing-interval: 4;
+$spacing-range-start: 4;
+$spacing-range-end: 128;
+$spacing-interval: 4;
+$divider-thickness: 1rem;
+$divider-color: #11142D;
+.padding-left-side{
+    padding-left:60px;
+}
+.padding-right{
+    padding-right:20px;
+}
+li:hover{
+    color:#6C5DD3;
+}
 .round-img{
-    border-radius: 50%;
+    border-radius: 25%;
+}
+.has-radius-12{
+    border-radius: 12px !important;
+}
+.has-radius-24{
+    border-radius: 24px !important;
 }
 
+.on-hover:hover{
+    background-color: #6C5DD3;
+    color: white !important;
+    border-radius: 15px;
+}
 
-// @import "../node_modules/bulma/bulma.sass";
-// @import '../node_modules/bulma-helpers/bulma-helpers';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma-helpers/bulma-helpers';
 
