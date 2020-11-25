@@ -11,12 +11,7 @@ $spacing-range-end: 128;
 $spacing-interval: 4;
 $divider-thickness: 1rem;
 $divider-color: #11142D;
-.padding-left-side{
-    padding-left:60px;
-}
-.padding-right{
-    padding-right:20px;
-}
+
 li:hover{
     color:#6C5DD3;
 }
@@ -34,6 +29,20 @@ li:hover{
     background-color: #6C5DD3;
     color: white !important;
     border-radius: 15px;
+}
+.notification-bell-count{
+    position: absolute;
+    z-index: 155px;
+    bottom: 600px;
+    right: 110px;
+    }
+
+.remove-cross-hero{
+    position: absolute;
+    z-index: 155px;
+    bottom: 445px;
+    right: 90px;
+    border-radius: 50px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');

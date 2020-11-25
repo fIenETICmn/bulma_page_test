@@ -1,514 +1,406 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Overview</title>
-        <link rel="stylesheet" href="main.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.0/cash.min.js"></script>
-    </head>
-    <body>
-        <div class="section has-background-white-bis">
-<!--            <div class="container">-->
-                <div class="columns has-background-white-bis">
-                    <div class="column is-3 has-padding-right-92">
-                        <aside class="menu">
-                            <figure class="image mx-4">
-                                <img src="logo.png" style="width: 176px; height: 47px;">
-                            </figure>
-                            <p class="menu-label mx-5 mb-5">
-                                Admin Tool
-                            </p>
-                            <ul class="menu-list">
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-primary">
-                                    <span class="icon has-text-white">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Overview</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.0/cash.min.js"></script>
+</head>
+
+<body>
+	<div class="section has-background-white-bis">
+		<!--            <div class="container">-->
+		<div class="columns has-background-white-bis">
+			<div class="column is-3 has-padding-right-92">
+				<aside class="menu">
+					<figure class="image mx-4">
+						<img src="logo.png" style="width: 176px; height: 47px;">
+					</figure>
+					<p class="menu-label mx-5 mb-5">Admin Tool</p>
+					<ul class="menu-list">
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-primary"> <span class="icon has-text-white">
                                         <i class="fas fa-check"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2 has-text-white">Overview</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
+							<span class="is-size-6 mx-2 has-text-white">Overview</span>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis"> <span class="icon has-text-grey">
                                         <i class="fas fa-shopping-bag"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Product</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
+							<span class="is-size-6 mx-2">Product</span>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis"> <span class="icon has-text-grey">
                                         <i class="fas fa-chart-bar"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Campaign</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
+							<span class="is-size-6 mx-2">Campaign</span>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis"> <span class="icon has-text-grey">
                                         <i class="fas fa-clock"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Schedules</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
+							<span class="is-size-6 mx-2">Schedules</span>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis"> <span class="icon has-text-grey">
                                         <i class="fas fa-wallet"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Payouts</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
+							<span class="is-size-6 mx-2">Payouts</span>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis"> <span class="icon has-text-grey">
                                         <i class="fas fa-receipt"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Statements</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis" id="acct_setting">
-                                    <span class="icon has-text-grey">
-                                        <i class="fas fa-cog"></i>
-                                    </span>
-                                    <span class="is-size-6 mx-2">Settings</span>
-                                </li>
-                            </ul>
-                            <hr>
-                            <p class="menu-label mx-5">
-                                Insight
-                            </p>
-                            <ul class="menu-list">
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <article class="media">
-                                            <figure class="media-left">
-                                              <span class="icon has-text-grey">
+							<span class="is-size-6 mx-2">Statements</span>
+						</li>
+
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis" id="acct_setting"> <span class="icon has-text-grey">
+                                        <a onclick="opensettingform()"><i class="fas fa-cog"></i>
+                                    </a></span>
+							<span class="is-size-6 mx-2">Settings</span>
+						</li>
+                        
+					</ul>
+					<hr>
+					<p class="menu-label mx-5">Insight</p>
+					<ul class="menu-list">
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
+							<article class="media">
+								<figure class="media-left"> <span class="icon has-text-grey">
                                         <i class="fas fa-inbox"></i>
                                     </span>
-                                            </figure>
-                                            <div class="media-content">
-                                              <span class="is-size-6 mx-2">Inbox</span>
-                                            </div>
-                                            <figure class="media-right">
-                                                <span class="icon mt-2">
-                                                    <i class="fas fa-arrow-right"></i>
-                                                </span>
-                                            </figure>
-                                        </article>
-
-<!--                                    <span class="icon has-text-grey">-->
-<!--                                        <i class="fas fa-inbox"></i>-->
-<!--                                    </span>-->
-<!--                                    <span class="is-size-6 mx-2">Inbox</span>-->
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
-                                        <i class="fas fa-bell"></i>
+								</figure>
+								<div class="media-content"> <span class="is-size-6 mx-2">Inbox</span>
+								</div>
+								<figure class="media-right"> <span class="icon">
+                                                    <span class="tag is-danger is-rounded">18</span>
+									</span>
+								</figure>
+							</article>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
+							<article class="media">
+								<figure class="media-left"> <span class="icon has-text-grey">
+                                                  <i class="fas fa-bell"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Notification</span>
-                                </li>
-                                <li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
-                                    <span class="icon has-text-grey">
+								</figure>
+								<div class="media-content"> <span class="is-size-6 mx-2">Notification</span>
+								</div>
+								<figure class="media-right"> <span class="icon">
+                                                    <span class="tag is-danger is-rounded">2</span>
+									</span>
+								</figure>
+							</article>
+						</li>
+						<li class="has-radius-12 pl-4 pr-4 pt-4 pb-3 has-background-white-bis">
+							<article class="media">
+								<figure class="media-left"> <span class="icon has-text-grey">
                                         <i class="fas fa-comments"></i>
                                     </span>
-                                    <span class="is-size-6 mx-2">Comments</span>
-                                </li>
-                                <li>
-                                    <article class="media mt-6">
-                                        <figure class="media-left">
-                                            <p class="image is-48x48 is-rounded">
-                                                <img src="ava.png">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <p class="is-size-6 has-text-black has-text-weight-medium">Tam Tran</p>
-                                            <p class="is-size-7 has-text-weight-medium has-text-grey-light"><span>Free Account</span></p>
-                                        </div>
-                                        <figure class="media-right">
-                                            <span class="icon mx-4">
-                                                <i class="fas fa-arrows-alt-v has-text-black"></i>
+								</figure>
+								<div class="media-content"> <span class="is-size-6 mx-2">Comments</span>
+								</div>
+								<figure class="media-right"> <span class="icon">
+                                                    <span class="tag is-danger is-rounded">20</span>
+									</span>
+								</figure>
+							</article>
+						</li>
+						<li>
+							<div class="box p-2 on-hover mt-5">
+								<article class="media">
+									<figure class="media-left">
+										<p class="image is-32x32 is-rounded">
+											<img src="ava.png">
+										</p>
+									</figure>
+									<div class="media-content">
+										<p class="is-size-6 has-text-black">Tam Tran</p>
+										<p class="is-size-7 has-text-grey-light"><span>Free account</span>
+										</p>
+									</div>
+									<figure class="media-right"> <span class="icon mx-4 mt-2">
+                                                <i class="fas fa-sort has-text-black"></i>
                                             </span>
-                                        </figure>
-                                    </article>
-                                </li>
-                            </ul>
-                            <hr>
-                        </aside>
-
-                        <!--                        <figure class="image">-->
-                        <!--                            <img src="logo.png" style="width:176px;height:47px;" >-->
-                        <!--                        </figure>-->
-                        <!--                        <p class="mt-6 mx-4">Admin tools</p>-->
-                        <!--                        <ul>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-5 has-text-left has-background-white-bis notification is-medium is-fullwidth is-info is-inverted ">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-check "></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Overview</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-shopping-bag"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Products</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-chart-bar"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Campaings</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-clock"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Schedules</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-text-left has-background-white-bis notification is-medium is-fullwidth is-info is-inverted ">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-wallet"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Payouts</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-receipt"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Statement</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left" id="acct_setting">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-cog"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Settings</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                        </ul>-->
-                        <!--                        <hr />-->
-                        <!--                        <p class="mt-6 mx-4">Insight</p>-->
-                        <!--                        <ul>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info mt-4 is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-inbox"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Inbox</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-bell"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Notifications</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <button class="button mt-4 has-background-white-bis notification is-medium is-fullwidth is-info is-inverted has-text-left">-->
-                        <!--                                    <span class="icon has-text-grey">-->
-                        <!--                                        <i class="fas fa-comments"></i>-->
-                        <!--                                    </span>-->
-                        <!--                                    <span class="is-size-6 has-text-grey">Comments</span>-->
-                        <!--                                </button>-->
-                        <!--                            </li>-->
-                        <!--                            <li>-->
-                        <!--                                <article class="media mt-6">-->
-                        <!--                                    <figure class="media-left">-->
-                        <!--                                        <p class="image is-48x48 is-rounded">-->
-                        <!--                                            <img src="ava.png " />-->
-                        <!--                                        </p>-->
-                        <!--                                    </figure>-->
-                        <!--                                    <div class="media-content">-->
-                        <!--                                            <p class=" is-size-6 has-text-black has-text-weight-medium">Tam Tran</p>-->
-                        <!--                                            <p class=" is-size-7 has-text-weight-medium"><span>Free Account</span></p>-->
-                        <!--                                    </div>-->
-                        <!--                                    <figure class="media-right">-->
-                        <!--                                        <span class="icon mx-4">-->
-                        <!--                                            <i class="fas fa-arrows-alt-v has-text-black"></i>-->
-                        <!--                                        </span>-->
-                        <!--                                    </figure>-->
-                        <!--                                </article>-->
-                        <!--                            </li>-->
-                        <!--                        </ul>-->
-                    </div>
-                    <div class="is-divider-vertical" data-content="OR"></div>
-                    <div class="column has-padding-left-60 has-padding-right-80 is-9">
-                        <div class="columns mb-6">
-                            <div class="column is-6">
-                                <h4 class="is-size-5 has-text-black">Hi Tam Tran,</h4>
-                                <h1 class="title is-size-2 has-text-black">Welcome back👋</h1>
-                            </div>
-                            <div class="column is-4">
-                                <fieldset disabled="disabled">
-                                    <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                            <input class="input" type="text" placeholder="Search">
-                                            <span class="icon is-small is-left">
+									</figure>
+								</article>
+							</div>
+						</li>
+					</ul>
+					<hr>
+				</aside>
+			</div>
+			<div class="is-divider-vertical" data-content="OR"></div>
+			<div class="column has-padding-left-60 has-padding-right-80 is-9">
+				<div class="columns mb-6">
+					<div class="column is-6">
+						<h4 class="is-size-5 has-text-black">Hi Tam Tran,</h4>
+						<h1 class="title is-size-2 has-text-black">Welcome back👋</h1>
+					</div>
+					<div class="column is-4">
+						<fieldset disabled="disabled">
+							<div class="field">
+								<p class="control is-expanded has-icons-left">
+									<input class="input" type="text" placeholder="Search"> <span class="icon is-small is-left">
                                                 <i class="fas fa-search"></i>
                                             </span>
-                                        </p>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="column is-2">
-                                <p class="buttons is-rounded has-text-right mt-2 mx-6">
-                                    <a onclick="openNotification()">
-                                        <span class="icon is-black" id="notify">
+								</p>
+							</div>
+						</fieldset>
+					</div>
+					<div class="column is-2"> <span class="icon notification-bell-count">
+                                                    <span class="tag is-danger is-rounded">2</span>
+						</span>
+						<p class="buttons is-rounded has-text-right mt-2 mx-6">
+							<a onclick="openNotification()"> <span class="icon is-black" id="notify">
                                             <i class="far fa-bell fa-2x"></i>
                                         </span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="columns has-radius-24 has-background-primary is-vcentered">
-                            <div class="column is-4 mt-6 mx-4 mb-6">
-                                <h2 class="is-size-3 title has-text-white">Set a google analytic code</h2>
-                                <p class="is-size-6 has-text-white mb-4">Did you know you can set a Google Analytics code for your products?</p>
-                                <button class="button has-radius-12 pl-6 pr-6 is-medium has-text-centered has-text-weight-medium has-text-black">Settings</button>
-                            </div>
-                            <div class="column is-2"></div>
-                            <div class="column is-4 has-text-centered">
-                                <figure class="image is-125X125">
-                                    <img src="slider-pic.png">
-                                </figure>
-                            </div>
-                            <div class="column is-2"></div>
-
-                        </div>
-                        <div class="columns mt-5">
-                            <div class="column">
-                                <div class="box pt-4 pl-4 pr-4 pb-5 has-radius-24">
-                                <div class="has-background-white">
-                                    <p class="is-size-5 has-text-black mx-4 mt-4 mb-6 has-text-weight-medium">Earnings by item</p>
-                                    <div class="box p-2 on-hover">
-                                        <article class="media">
-                                            <figure class="media-left">
-                                                <p class="image round-img has-background-danger-light">
-                                                    <img class="" src="figure-1.png" style="width: 56px; height: 56px;">
-                                                </p>
-                                            </figure>
-                                            <div class="media-content">
-                                                <p class="is-size-6 has-text-black mt-2 has-text-weight-medium">Benot 3D Kit</p>
-                                                <p class="is-size-7 has-text-weight-medium">Illustration</p>
-                                            </div>
-                                            <figure class="media-right">
-                                                <span class="icon mt-2">
-                                                    <i class="fas fa-arrow-right"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="columns has-radius-24 has-background-primary is-vcentered">
+					<div class="column is-4 mt-6 mx-4 mb-6">
+						<h2 class="is-size-3 title has-text-white">Set a google analytic code</h2>
+						<p class="is-size-6 has-text-white mb-4">Did you know you can set a Google Analytics code for your products?</p>
+						<button class="button has-radius-12 pl-6 pr-6 is-medium has-text-centered has-text-weight-medium has-text-black">Settings</button>
+					</div>
+					<div class="column is-2"></div>
+					<div class="column is-4 has-text-centered">
+						<figure class="image is-125X125">
+							<img src="slider-pic.png">
+						</figure>
+					</div>
+					<div class="column is-2"> <span class="remove-cross-hero">
+                                    <a class="tag is-delete is-medium is-rounded is-text-black"></a>
                                                 </span>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="box p-2 on-hover">
-                                        <article class="media">
-                                            <figure class="media-left">
-                                                <p class="image round-img has-background-warning-light">
-                                                    <img class="" src="figure-2.png" style="width: 56px; height: 56px;">
-                                                </p>
-                                            </figure>
-                                            <div class="media-content">
-                                                <p class="is-size-6 has-text-black mt-2 has-text-weight-medium">Benot 3D Kit</p>
-                                                <p class="is-size-7 has-text-weight-medium">Illustration</p>
-                                            </div>
-                                            <figure class="media-right">
-                                                <span class="icon mt-2">
-                                                    <i class="fas fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="columns mt-5">
+					<div class="column">
+						<div class="box pt-4 pl-4 pr-4 pb-5 has-radius-24">
+							<div class="has-background-white">
+								<p class="is-size-5 has-text-black mx-4 mt-4 mb-6 has-text-weight-medium">Earnings by item</p>
+								<div class="box p-2 on-hover">
+									<article class="media">
+										<figure class="media-left">
+											<p class="image round-img has-background-danger-light">
+												<img class="" src="figure-1.png" style="width: 56px; height: 56px;">
+											</p>
+										</figure>
+										<div class="media-content">
+											<p class="is-size-6 has-text-black mt-2 has-text-weight-medium">Benot 3D Kit</p>
+											<p class="is-size-7 has-text-weight-medium">Illustration</p>
+										</div>
+										<figure class="media-right"> <span class="icon mt-2">
+                                                   <i class="fas fa-angle-right"></i>
                                                 </span>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="box p-2 on-hover mb-4">
-                                        <article class="media">
-                                            <figure class="media-left">
-                                                <p class="image round-img has-background-info-light">
-                                                    <img class="" src="figure-3.png" style="width: 56px; height: 56px;">
-                                                </p>
-                                            </figure>
-                                            <div class="media-content">
-                                                <p class="is-size-6 has-text-black mt-2 has-text-weight-medium">Benot 3D Kit</p>
-                                                <p class="is-size-7 has-text-weight-medium">Illustration</p>
-                                            </div>
-                                            <figure class="media-right">
-                                                <span class="icon mt-2">
-                                                    <i class="fas fa-arrow-right"></i>
+										</figure>
+									</article>
+								</div>
+								<div class="box p-2 on-hover">
+									<article class="media">
+										<figure class="media-left">
+											<p class="image round-img has-background-warning-light">
+												<img class="" src="figure-2.png" style="width: 56px; height: 56px;">
+											</p>
+										</figure>
+										<div class="media-content">
+											<p class="is-size-6 has-text-black mt-2 has-text-weight-medium">Benot 3D Kit</p>
+											<p class="is-size-7 has-text-weight-medium">Illustration</p>
+										</div>
+										<figure class="media-right"> <span class="icon mt-2">
+                                                    <i class="fas fa-angle-right"></i>
                                                 </span>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                </div>
-                                </div>
-                                    </div>
-                            <div class="column">
-                                <div class="box pt-4 pl-4 pr-4 pb-1 has-radius-24 has-background-danger-light">
-<!--                                <div class="">-->
-                                    <h5 class="is-size-5 has-text-black mx-4 mt-2 mb-4 has-text-weight-medium">Earnings</h5>
-                                    <div class="has-background-white">
-<!--                                        <div class="content">-->
-                                        <figure class="media">
-                                            <p class="image is-250x250">
-                                                <img class="" src="g1.jpg">
-                                            </p>
-                                        </figure>
-                                        <div class="container mx-5 my-5 mb-4">
-                                            <button class="button is-medium is-fullwidth mt-2 is-primary">Analytic</button>
-                                            <br>
-                                        </div>
-<!--                                        </div>-->
-                                    </div>
-<!--                                </div>-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="column">
-                                <div class="box pt-5 pb-6 has-radius-24">
-                                <div class="has-background-white has-text-centered">
-<!--                                    <div class="content">-->
-                                    <p class="is-size-5 has-text-weight-medium has-text-black mt-2">Your earning this month</p>
-                                    <h2 class="has-text-primary has-text-weight-medium" style="font-size: 70px;">479.4</h2>
-                                    <p class="is-size-6 has-text-weight-light mt-2">Update your payout</p>
-                                    <p class="is-size-6 has-text-weight-light">method in Settings</p>
-                                    <button class="button has-text-weight-medium is-primary is-inverted pl-6 pr-6 mt-5 mb-3">Withdraw All Earnings</button>
-<!--                                </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-<!--                                <div class="box p-4 has-radius-24 ">-->
-                                <h5 class="is-size-5 mb-5 has-text-weight-medium has-text-black">Affiliate Impressions</h5>
-                                <figure class="media">
-                                    <p class="image is-250x250">
-                                        <img class="" src="g2.jpg">
-                                    </p>
-                                </figure>
-<!--                                </div>-->
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+										</figure>
+									</article>
+								</div>
+								<div class="box p-2 on-hover mb-4">
+									<article class="media">
+										<figure class="media-left">
+											<p class="image round-img has-background-info-light">
+												<img class="" src="figure-3.png" style="width: 56px; height: 56px;">
+											</p>
+										</figure>
+										<div class="media-content">
+											<p class="is-size-6 has-text-black mt-2 has-text-weight-medium">Benot 3D Kit</p>
+											<p class="is-size-7 has-text-weight-medium">Illustration</p>
+										</div>
+										<figure class="media-right"> <span class="icon mt-2">
+                                                   <i class="fas fa-angle-right"></i>
+                                                </span>
+										</figure>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box pt-4 pl-4 pr-4 pb-1 has-radius-24 has-background-danger-light">
+							<!--                                <div class="">-->
+							<h5 class="is-size-5 has-text-black mx-4 mt-2 mb-4 has-text-weight-medium">Earnings</h5>
+							<div class="has-background-white">
+								<!--                                        <div class="content">-->
+								<figure class="media">
+									<p class="image is-250x250">
+										<img class="" src="g1.jpg">
+									</p>
+								</figure>
+								<div class="container mx-5 my-5 mb-4">
+									<button class="button is-medium is-fullwidth mt-2 is-primary">Analytic</button>
+									<br>
+								</div>
+								<!--                                        </div>-->
+							</div>
+							<!--                                </div>-->
+						</div>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="column">
+						<div class="box pt-5 pb-6 has-radius-24">
+							<div class="has-background-white has-text-centered">
+								<!--                                    <div class="content">-->
+								<p class="is-size-5 has-text-weight-medium has-text-black mt-2">Your earning this month</p>
+								<h2 class="has-text-primary has-text-weight-medium" style="font-size: 70px;">479.4</h2>
+								<p class="is-size-6 has-text-weight-light mt-2">Update your payout</p>
+								<p class="is-size-6 has-text-weight-light">method in Settings</p>
+								<button class="button has-text-weight-medium is-primary is-inverted pl-6 pr-6 mt-5 mb-3">Withdraw All Earnings</button>
+								<!--                                </div>-->
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<!--                                <div class="box p-4 has-radius-24 ">-->
+						<h5 class="is-size-5 mb-5 has-text-weight-medium has-text-black">Affiliate Impressions</h5>
+						<figure class="media">
+							<p class="image is-250x250">
+								<img class="" src="g2.jpg">
+							</p>
+						</figure>
+						<!--                                </div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--        account-setting modal-->
+	<div class="modal has-contactform">
+		<div class="modal-background"></div>
+		<div class="modal-content has-background-white py-5 px-5">
+			<h3 class="is-size-4 has-text-black mb-5">Account Settings</h3>
+			<p class="buttons">
+				<button class="button is-small has-radius-12 is-primary">Profile</button>
+				<button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Profile</button>
+				<button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Password</button>
+				<button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Email</button>
+				<button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Notifications</button>
+				<button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Settings</button>
+			</p>
+			<p class="is-size-7 has-text-grey-light">Your Avtar</p>
+			<article class="media mt-5 mb-4">
+				<figure class="media-left">
+					<p class="image is-64x64 is-rounded">
+						<img src="ava.png">
+					</p>
+				</figure>
+				<div class="media-content mt-2 mx-6">
+					<div class="field has-text-centered is-grouped">
+						<p class="control">
+							<button class="button has-radius-12 is-primary">Upload New</button>
+						</p>
+						<p class="control">
+							<button class="button has-radius-12 is-light">Delet Avtar</button>
+						</p>
+					</div>
+					<p class="has-text-grey-light">Avatar help your teammates recognize you in Unity.</p>
+				</div>
+			</article>
+			<hr>
+			<form>
+				<div class="field-body mt-5">
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Your Full Name</label>
+						<div class="control is-expanded mt-3">
+							<input class="input is-medium" type="text" placeholder="">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Display Name</label>
+						<div class="control is-expanded mt-3">
+							<input class="input is-medium" type="text" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="field-body mt-5">
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Role</label>
+						<div class="control is-expanded mt-3">
+							<input class="input is-medium" type="text" placeholder="">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Location</label>
+						<div class="control is-expanded mt-3">
+							<input class="input is-medium" type="text" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="field-body mt-5">
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Role</label>
+						<div class="control is-expanded mt-3">
+							<input class="input is-medium" type="text" placeholder="">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Team</label>
+						<div class="control is-expanded mt-3">
+							<input class="input is-medium" type="text" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="field-body mt-5">
+					<div class="field">
+						<label class="label is-small has-text-grey has-text-weight-medium">Bio</label>
+						<div class="control is-expanded mt-3">
+							<textarea class="textarea" placeholder=""></textarea>
+						</div>
+					</div>
+				</div>
+				<button class="button has-radius-12 is-dark mt-5 mb-5 has-text-weight-medium">Upload profile</button>
+			</form>
+		</div>
+	</div>
+	<!--         notify modal -->
+	<div class="modal has-notification">
+		<div class="modal-background"></div>
+		<div class="modal-content has-background-white py-5 px-5">
+			<h3 class="is-size-4 has-text-black mb-6">Recent Notification</h3>
+			<article class="media mt-6">
+				<figure class="media-left">
+					<p class="image is-48x48 is-rounded">
+						<img src="ava.png">
+					</p>
+				</figure>
+				<div class="media-content">
+					<p class="is-size-6 has-text-black has-text-weight-medium">Sarah Surander</p>
+					<p class="is-size-7 has-text-weight-medium"><span>Commeneted on Collab Design</span>
+					</p>
+				</div>
+				<figure class="media-right">
+					<p class="is-size-6">8hr</p>
+				</figure>
+			</article>
+		</div>
+	</div>
+	<script src="main.js"></script>
+	<script>
+		function openNotification() {
+		                $(".has-notification").toggle();
+		            }
 
-        <!--        account-setting modal-->
-        <div class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-content has-background-white py-5 px-5">
-                <h3 class="is-size-4 has-text-black mb-5">Account Settings</h3>
-                <p class="buttons">
-                <button class="button is-small has-radius-12 is-primary">Profile </button>
-                <button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Profile </button>
-                    <button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Password </button>
-                    <button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Email </button>
-                    <button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Notifications </button>
-                    <button class="button is-small has-radius-12 has-text-black is-outlined is-danger">Settings </button>
-                </p>
-                <p class="is-size-7 has-text-grey-light">Your Avtar</p>
-                <article class="media mt-5 mb-4">
-                    <figure class="media-left">
-                        <p class="image is-64x64 is-rounded">
-                            <img src="ava.png">
-                        </p>
-                    </figure>
-                    <div class="media-content mt-2 mx-6">
-                        <div class="field has-text-centered is-grouped">
-                            <p class="control">
-                                <button class="button has-radius-12 is-primary">
-                                    Upload New
-                                </button>
-                            </p>
-                            <p class="control">
-                                <button class="button has-radius-12 is-light">
-                                    Delet Avtar
-                                </button>
-                            </p>
-                        </div>
-                        <p class="has-text-grey-light">Avatar help your teammates recognize you in Unity.</p>
-                    </div>
-                </article>
-                <hr>
-                <form>
-                    <div class="field-body mt-5">
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Your Full Name</label>
-                            <div class="control is-expanded mt-3">
-                                <input class="input is-medium" type="text" placeholder="">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Display Name</label>
-                            <div class="control is-expanded mt-3">
-                                <input class="input is-medium" type="text" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-body mt-5">
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Role</label>
-                            <div class="control is-expanded mt-3">
-                                <input class="input is-medium" type="text" placeholder="">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Location</label>
-                            <div class="control is-expanded mt-3">
-                                <input class="input is-medium" type="text" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-body mt-5">
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Role</label>
-                            <div class="control is-expanded mt-3">
-                                <input class="input is-medium" type="text" placeholder="">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Team</label>
-                            <div class="control is-expanded mt-3">
-                                <input class="input is-medium" type="text" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-body mt-5">
-                        <div class="field">
-                            <label class="label is-small has-text-grey has-text-weight-medium">Bio</label>
-                            <div class="control is-expanded mt-3">
-                                <textarea class="textarea" placeholder=""></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button has-radius-12 is-dark mt-5 mb-5 has-text-weight-medium">Upload profile</button>
-                </form>
-            </div>
-        </div>
-
-        <!--         notify modal -->
-        <div class="modal has-notification">
-            <div class="modal-background"></div>
-            <div class="modal-content has-background-white py-5 px-5">
-                <h3 class="is-size-4 has-text-black mb-6">Recent Notification</h3>
-                <article class="media mt-6">
-                    <figure class="media-left">
-                        <p class="image is-48x48 is-rounded">
-                            <img src="ava.png">
-                        </p>
-                    </figure>
-                    <div class="media-content">
-                        <p class="is-size-6 has-text-black has-text-weight-medium">Sarah Surander</p>
-                        <p class="is-size-7 has-text-weight-medium"><span>Commeneted on Collab Design</span></p>
-                    </div>
-                    <figure class="media-right">
-                        <p class="is-size-6">8hr</p>
-                    </figure>
-                </article>
-            </div>
-        </div>
-        <script src="main.js"></script>
-        <script>
-            function openNotification() {
-                $(".has-notification").toggle();
-            }
-        </script>
-    </body>
+		function opensettingform() {
+		                $(".has-contactform").toggle();
+		            }
+	</script>
+</body>
 </html>
