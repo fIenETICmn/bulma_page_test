@@ -12,7 +12,18 @@ $spacing-interval: 4;
 $divider-thickness: 1rem;
 $divider-color: #11142D;
 
-li:hover{
+// .transparent-style{
+//     background-color: #ffffff;
+//     opacity: .4;
+// }
+
+.notify-container-display{
+    display: none;
+}
+.setting-container-display{
+    display: none;
+}
+.li-text:hover{
     color:#6C5DD3;
 }
 .round-img{
@@ -32,6 +43,9 @@ li:hover{
     color: white !important;
     border-radius: 15px;
 }
+.on-hover-notification-box-text:hover{
+    color: white !important;
+}
 .on-hover-setting:hover{
     background-color: #6C5DD3;
     color: white !important;
@@ -50,13 +64,32 @@ li:hover{
     color: white !important;
     border-color: #6C5DD3 !important;
 }
+.modal-content-notification-wh{
+    width: 400px !important;
+    position: absolute;
+    z-index: 155px;
+    top: 120px;
+    right: 150px;
+}
+.modal-content-setting-wh{
+    width: 600px !important;
+    top: 50px;
+    position: absolute;
+    z-index: 155px;
+    right: 350px;
+}
 .notification-bell-count{
+    position: absolute;
+    z-index: 155px;
+    bottom: 580px;
+    right: 130px;
+    }
+.notification-position{
     position: absolute;
     z-index: 155px;
     bottom: 600px;
     right: 110px;
-    }
-
+}
 .remove-cross-hero{
     position: absolute;
     z-index: 155px;
@@ -68,8 +101,16 @@ li:hover{
 .remove-cross-setting-form{
     position: absolute;
     z-index: 155px;
-    bottom: 560px;
+    bottom: 830px;
     right: 10px;
+    border-radius: 50px;
+}
+
+.remove-cross-notification-form{
+    position: absolute;
+    z-index: 155px;
+    bottom: 816px;
+    right: 35px;
     border-radius: 50px;
 }
 

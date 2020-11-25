@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-li:hover {
+.notify-container-display {
+  display: none; }
+
+.setting-container-display {
+  display: none; }
+
+.li-text:hover {
   color: #6C5DD3; }
 
 .round-img {
@@ -19,6 +25,9 @@ li:hover {
   color: white !important;
   border-radius: 15px; }
 
+.on-hover-notification-box-text:hover {
+  color: white !important; }
+
 .on-hover-setting:hover {
   background-color: #6C5DD3;
   color: white !important;
@@ -37,7 +46,27 @@ li:hover {
   color: white !important;
   border-color: #6C5DD3 !important; }
 
+.modal-content-notification-wh {
+  width: 400px !important;
+  position: absolute;
+  z-index: 155px;
+  top: 120px;
+  right: 150px; }
+
+.modal-content-setting-wh {
+  width: 600px !important;
+  top: 50px;
+  position: absolute;
+  z-index: 155px;
+  right: 350px; }
+
 .notification-bell-count {
+  position: absolute;
+  z-index: 155px;
+  bottom: 580px;
+  right: 130px; }
+
+.notification-position {
   position: absolute;
   z-index: 155px;
   bottom: 600px;
@@ -53,8 +82,15 @@ li:hover {
 .remove-cross-setting-form {
   position: absolute;
   z-index: 155px;
-  bottom: 560px;
+  bottom: 830px;
   right: 10px;
+  border-radius: 50px; }
+
+.remove-cross-notification-form {
+  position: absolute;
+  z-index: 155px;
+  bottom: 816px;
+  right: 35px;
   border-radius: 50px; }
 
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
